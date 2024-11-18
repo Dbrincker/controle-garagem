@@ -1,0 +1,159 @@
+/* Resetando estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a fonte principal e o fundo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+h1, h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3c4b60;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Vagas e seu status */
+.vaga-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.vagas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.vaga {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f1f6;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3c4b60;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vaga.livre {
+    background-color: #4caf50;
+    color: white;
+}
+
+.vaga.ocupada {
+    background-color: #f44336;
+    color: white;
+}
+
+.vaga:hover {
+    transform: scale(1.05);
+}
+
+.vaga:active {
+    transform: scale(0.95);
+}
+
+/* Formulário de Cadastro */
+.cadastro-cliente {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input, select {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Resumo Financeiro */
+.resumo-financeiro {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#resumo p {
+    font-size: 18px;
+    color: #3c4b60;
+    margin: 10px 0;
+}
+
+#resumo strong {
+    font-size: 20px;
+    color: #388e3c;
+}
